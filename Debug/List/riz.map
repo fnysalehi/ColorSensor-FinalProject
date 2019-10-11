@@ -1,0 +1,49 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+tmp3                                                                              0x0160       2
+tmp4                                                                              0x0162       2
+state                                                                             0x0164       2
+color                                                                             0x0166       8
+buffer                                                                            0x016E       4
+_base_y                                                                           0x0172       4
+_lcd_x                                                                            0x0176       1
+_lcd_y                                                                            0x0177       1
+_lcd_maxx                                                                         0x0178       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+d                                                                                 R4,R5        2
+tmp                                                                               R6,R7        2
+tmp2                                                                              R8,R9        2
+tmpa                                                                              R10,R11      2
+tmpa2                                                                             R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer1_capt_isr                                                                   0x00077     68
+main                                                                              0x000BB    121
+_lcd_delay_G100                                                                   0x00134      4
+_lcd_ready                                                                        0x00138     17
+_lcd_write_nibble_G100                                                            0x00149     10
+_lcd_write_data                                                                   0x00153     15
+_lcd_read_nibble_G100                                                             0x00162      9
+lcd_read_byte0_G100                                                               0x0016B      9
+lcd_gotoxy                                                                        0x00174     20
+lcd_clear                                                                         0x00188     21
+lcd_putchar                                                                       0x0019D     39
+lcd_puts                                                                          0x001C4     17
+_long_delay_G100                                                                  0x001D5      5
+_lcd_init_write_G100                                                              0x001DA     12
+lcd_init                                                                          0x001E6     52
+put_buff_G101                                                                     0x0021A     64
+_print_G101                                                                       0x0025A    308
+sprintf                                                                           0x0038E     52
+strlen                                                                            0x003C2     12
+strlenf                                                                           0x003CE     13
