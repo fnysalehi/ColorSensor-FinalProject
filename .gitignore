@@ -1,0 +1,68 @@
+# CodeVisionAVR specific
+*.cci
+*.cbi
+*.cof
+*.obj
+*.lst
+*.map
+*.hex
+*.eep
+*.dbg
+*.fct
+*.prj
+*.prj~
+*.c~
+*.h~
+*.asm
+*.dep
+*.d
+*.o
+*.aws
+*.atsuo
+*.str1
+
+# Build directories
+Debug/
+Release/
+[Dd]ebug/
+[Rr]elease/
+
+# CodeVisionAVR backup files
+Backup*/
+
+# AVR Studio/Atmel Studio specific
+*.atsln
+*.cproj
+*.xml.depend
+*.xml.layout
+*.componentinfo.xml
+.vs/
+*.elf
+
+# Operating System specific
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# IDE specific (if using other IDEs)
+.vscode/
+.idea/
+
+# Keep these files
+!.gitignore
+!README.md
+!color_sensor.c
