@@ -28,13 +28,33 @@ LCD Connection:
 - EN: PORT0.2
 - DATA4-7: PORT0.4-7
 
-## Building and Flashing
+Color Sensor Connection:
+- S2: PORTB.2
+- S3: PORTB.4
+- Output: Connected to interrupt pin
 
-This project is built using CodeVisionAVR with the following settings:
-- Optimization Level: Size (-Os)
-- Memory Model: Small
-- Printf Features: int, width
-- Scanf Features: int, width
+Color Filter Selection:
+| S2 | S3 | Filter Type |
+|----|----| ------------|
+| 0  | 0  | RED        |
+| 1  | 1  | GREEN      |
+| 0  | 1  | BLUE       |
+| 1  | 0  | CLEAR      |
+
+## Building
+
+### Using CodeVisionAVR
+1. Open project in CodeVisionAVR
+2. Set the following configuration:
+   - Optimization Level: Size (-Os)
+   - Memory Model: Small
+   - Printf Features: int, width
+   - Scanf Features: int, width
+3. Build project
+
+## Development
+
+This project has migrated from CodeVisionAVR to a standard Makefile-based build system for better portability and maintainability.
 
 ## Project Structure
 
@@ -42,7 +62,7 @@ This project is built using CodeVisionAVR with the following settings:
 .
 ├── src/
 │   └── color_sensor.c    # Main source code
-├── include/
-│   └── color_sensor.h    # Header files
+└── include/
+    └── color_sensor.h    # Header files
 
 ```
